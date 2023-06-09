@@ -20,7 +20,7 @@ module.exports = {
     '@next/next/no-img-element': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_|^React$', argsIgnorePattern: '^_' }],
     '@typescript-eslint/semi': ['error', 'always'],
     '@typescript-eslint/strict-boolean-expressions': 'off', // allow: 'false-ish object' || 'default object'
     '@typescript-eslint/triple-slash-reference': 0, // for next-env.d.ts
