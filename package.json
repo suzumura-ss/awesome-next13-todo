@@ -9,7 +9,8 @@
     "test": "jest",
     "lint": "yarn lint:check --fix",
     "lint:check": "eslint . --ext js,cjs,jsx,ts,tsx",
-    "db:init": "prisma db push"
+    "db:init": "prisma db push",
+    "build:container": "docker build -t todo:latest ."
   },
   "dependencies": {
     "@prisma/client": "4.15.0",
