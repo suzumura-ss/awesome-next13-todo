@@ -1,7 +1,6 @@
 FROM node:18-bookworm-slim
 
 WORKDIR /app
-ENV DATABASE_URL="file:./dev.db"
 
 RUN apt-get update && apt-get install -y \
     libssl3 \
