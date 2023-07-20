@@ -1,4 +1,4 @@
-FROM node:18-bookworm-slim
+FROM public.ecr.aws/docker/library/node:18.16.0-slim
 
 WORKDIR /app
 
@@ -15,5 +15,5 @@ ADD bootstrap.sh next.config.js postcss.config.cjs tailwind.config.cjs tsconfig.
   ./
 RUN yarn install && yarn build
 
-EXPOSE 3000
+EXPOSE 80
 CMD ["./bootstrap.sh"]
